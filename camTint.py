@@ -45,6 +45,7 @@ def camTint():
             cl.parm('rampattribute').set('sample')
             cl.setParms({'ramp1cr': 1, 'ramp1cg': 1, 'ramp1cb': 1})
             cl.setParms({'ramp2cr': 0, 'ramp2cg': 1, 'ramp2cb': 0})
+            cl.setColor(hou.Color((1.0,0.23,0.13)))
 
             #break
             
