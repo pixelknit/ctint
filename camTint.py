@@ -52,6 +52,7 @@ def camTint():
         cl_mix = hou.node(path).createNode('attribwrangle', 'color_mix')
         cl_mix.moveToGoodPosition()
         cl_mix.parm('snippet').set('@Cd *= point(1,"Cd",@ptnum);')
+        print 'Network created with extra color mix wrangle'
     except:
         hou.ui.displayMessage('Please select the camera object merge node')
 #camtint()
